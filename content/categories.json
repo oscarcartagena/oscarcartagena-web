@@ -1,0 +1,100 @@
+[
+  {
+    "id": 96,
+    "slug": "blog-en",
+    "name": "Blog English",
+    "count": 4,
+    "linkPath": "/category/blog-en"
+  },
+  {
+    "id": 68,
+    "slug": "blog-es",
+    "name": "Blog Español",
+    "count": 8,
+    "linkPath": "/es/category/blog-es"
+  },
+  {
+    "id": 65,
+    "slug": "charlas",
+    "name": "Charlas",
+    "count": 8,
+    "linkPath": "/es/category/charlas"
+  },
+  {
+    "id": 66,
+    "slug": "entrevistas",
+    "name": "Entrevistas",
+    "count": 9,
+    "linkPath": "/es/category/entrevistas"
+  },
+  {
+    "id": 61,
+    "slug": "flash",
+    "name": "Flash",
+    "count": 21,
+    "linkPath": "/es/category/flash"
+  },
+  {
+    "id": 100,
+    "slug": "interviews",
+    "name": "Interviews",
+    "count": 0,
+    "linkPath": "/category/interviews"
+  },
+  {
+    "id": 64,
+    "slug": "logotipo",
+    "name": "Logotipo",
+    "count": 2,
+    "linkPath": "/es/category/logotipo"
+  },
+  {
+    "id": 62,
+    "slug": "otros",
+    "name": "Otros",
+    "count": 3,
+    "linkPath": "/es/category/otros"
+  },
+  {
+    "id": 7,
+    "slug": "portfolio",
+    "name": "portfolio",
+    "count": 34,
+    "linkPath": "/es/category/portfolio"
+  },
+  {
+    "id": 1,
+    "slug": "sin-categoria",
+    "name": "Sin categoría",
+    "count": 0,
+    "linkPath": "/category/sin-categoria"
+  },
+  {
+    "id": 80,
+    "slug": "sin-categoria-es",
+    "name": "Sin categoría",
+    "count": 0,
+    "linkPath": "/es/category/sin-categoria-es"
+  },
+  {
+    "id": 98,
+    "slug": "speaker",
+    "name": "Speaker",
+    "count": 1,
+    "linkPath": "/category/speaker"
+  },
+  {
+    "id": 10,
+    "slug": "uncategorized",
+    "name": "Uncategorized",
+    "count": 0,
+    "linkPath": "/es/category/uncategorized"
+  },
+  {
+    "id": 63,
+    "slug": "web",
+    "name": "Web",
+    "count": 7,
+    "linkPath": "/es/category/web"
+  }
+]

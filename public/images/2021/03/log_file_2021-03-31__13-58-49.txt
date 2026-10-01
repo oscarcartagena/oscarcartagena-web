@@ -1,0 +1,45 @@
+
+---Downloaded files---
+The import files for: Vastart Agency were successfully downloaded!
+Initial max execution time = 3000
+Files info:
+Site URL = https://oscarcartagena.com
+Data file = /nfs/c01/h05/mnt/8795/domains/oscarcartagena.com/html/wp-content/uploads/2021/03/demo-content-import-file_2021-03-31__13-58-49.xml
+Widget file = /nfs/c01/h05/mnt/8795/domains/oscarcartagena.com/html/wp-content/uploads/2021/03/demo-widgets-import-file_2021-03-31__13-58-49.json
+Customizer file = /nfs/c01/h05/mnt/8795/domains/oscarcartagena.com/html/wp-content/uploads/2021/03/demo-customizer-import-file_2021-03-31__13-58-49.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Buscar - No Title - Widget already exists
+Entradas recientes - No Title - Widget already exists
+Comentarios recientes - No Title - Widget already exists
+Archivos - No Title - Widget already exists
+Categorías - No Title - Widget already exists
+Meta - No Title - Widget already exists
+Buscar - search - Imported
+KC Content - About Us - Imported
+KC Content - Social media - Imported
+Vídeo - what we do - Imported
+Nube de etiquetas - tags - Imported
+Entradas recientes - recent post - Imported
+KC Content - gallery - Imported
+Categorías - categories - Imported
+
+Footer Column 1 : 
+
+KC Content - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---dt-vcdi/after_import---
+
