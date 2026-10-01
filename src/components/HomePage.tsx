@@ -8,6 +8,8 @@ const copy = {
     tagline:
       "Seasoned Business Developer and serial Entrepreneur.\nXR industry leader, consultant & speaker. Artist, Musician & Dj.",
     book: "Book a call",
+    substackLine: "Every week or so I write articles about technology and society.",
+    substackCta: "Read on Substack",
     who: "¿WHO AM I?",
     p1: (
       <>
@@ -41,6 +43,11 @@ const copy = {
     p2: "Internationally, I collaborate as an advisor and regional liaison in multiple initiatives such as X Reality Safety Intelligence (XRSI), Women of the Future, AIXR, and AWE XR, among others.",
     p3: "A distinguished bilingual speaker and panel moderator for digital and in-person events.",
     linkedin: "Want to know more? go to my LinkedIn",
+    rageTagline: "From engagement to enragement",
+    rageLead: "Every click you make is being monetized. Not your preferences. Not your values. Your anger.",
+    rageBody:
+      "Platforms learned that outrage pays, then rewired the world to deliver it. This book names that architecture, follows the money, and maps a way out.",
+    rageCta: "Go to rageketing.com",
     mentoring: "MENTORING",
     mentoringBody: "Through ADPList you can schedule 1-on-1 mentoring sessions with me for free.",
     initiatives: "MY INITIATIVES",
@@ -121,6 +128,8 @@ const copy = {
     tagline:
       "Emprendedor serial. Líder de industria, consultor y conferencista. Músico, productor y Dj.",
     book: "Agenda una llamada",
+    substackLine: "Cada cierto tiempo publico artículos e investigaciones sobre tecnología y sociedad.",
+    substackCta: "Leer en Substack",
     who: "¿QUIÉN SOY?",
     p1: (
       <>
@@ -151,6 +160,11 @@ const copy = {
     p2: "Internacionalmente colaboro como asesor y enlace regional en múltiples iniciativas como X Reality Safety Intelligence (XRSI), Women of the Future, AIXR y AWE XR, entre otras.",
     p3: "Destacado speaker bilingüe y moderador de panel para eventos digitales y presenciales.",
     linkedin: "¿Quieres saber más? ve a mi LinkedIn",
+    rageTagline: "Del amor al odio",
+    rageLead: "Cada clic que das se está monetizando. No tus gustos. No tus valores. Tu rabia.",
+    rageBody:
+      "Las plataformas aprendieron que la rabia paga, y reconfiguraron el mundo para entregártela. Este libro nombra esa arquitectura, sigue el dinero y traza una salida.",
+    rageCta: "Entra a rageketing.com",
     mentoring: "MENTORÍAS",
     mentoringBody: "A través de ADPList puedes agendar mentorías gratuitas 1-a-1 conmigo.",
     initiatives: "MIS INICIATIVAS",
@@ -242,58 +256,90 @@ export default function HomePage({ locale, posts }: { locale: Locale; posts: Pos
 
   return (
     <div className="bg-paper">
-      <section className="bg-yellow min-h-[min(990px,calc(100vh-83px))] flex items-center">
-        <div className="site-container w-full py-16 md:py-24 flex justify-end">
-          <div className="max-w-[640px] text-right">
+      <section className="bg-yellow min-h-[min(990px,calc(100vh-83px))]">
+        <div className="grid lg:grid-cols-2 min-h-[min(990px,calc(100vh-83px))]">
+          <div className="relative min-h-[70vh] lg:min-h-full">
             <Image
-              src="/images/2024/09/oscarsign.png"
+              src="/images/hero-oscar.webp"
               alt="Oscar Cartagena"
-              width={687}
-              height={187}
-              className="ml-auto w-full max-w-[520px]"
+              fill
               priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover object-[center_12%]"
             />
-            <p className="mt-8 text-[22px] md:text-[26px] leading-snug text-ink font-medium whitespace-pre-line">
-              {t.tagline}
-            </p>
-            <a
-              href="https://calendly.com/augexp/oscartagena"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex mt-10 rounded-full bg-coral text-white font-bold uppercase tracking-[2px] text-[14px] px-12 py-3 hover:opacity-90"
-            >
-              {t.book}
-            </a>
+          </div>
+          <div className="flex items-center justify-center lg:justify-end px-6 py-16 md:px-12 lg:pr-[max(2rem,calc((100vw-1140px)/2))]">
+            <div className="max-w-[560px] w-full text-right">
+              <Image
+                src="/images/2024/09/oscarsign.png"
+                alt="Oscar Cartagena"
+                width={687}
+                height={187}
+                className="ml-auto w-full max-w-[520px]"
+                priority
+              />
+              <p className="mt-8 text-[22px] md:text-[26px] leading-snug text-ink font-medium whitespace-pre-line">
+                {t.tagline}
+              </p>
+              <a
+                href="https://calendly.com/augexp/oscartagena"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-coral inline-flex mt-10 rounded-full font-bold uppercase tracking-[2px] text-[14px] px-12 py-3 hover:opacity-90"
+              >
+                {t.book}
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="quien-soy" className="site-container pt-16 pb-6">
-        <h1 className="section-title text-ink">{t.who}</h1>
-      </section>
-
-      <section className="site-container pb-10 grid gap-10 lg:grid-cols-[1fr_280px] items-start">
-        <div className="text-[18px] leading-[1.85] space-y-6">
-          <p>{t.p1}</p>
-          <p>{t.p2}</p>
-          <p>{t.p3}</p>
+      <section className="bg-ink">
+        <div className="site-container flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-white text-[17px] md:text-[18px] font-medium">
+            <span className="text-yellow font-bold uppercase tracking-[0.18em] text-[12px] mr-3">
+              Substack
+            </span>
+            {t.substackLine}
+          </p>
           <a
-            href="https://linkedin.com/in/oscarcartagena"
+            href="https://oscarcartagena.substack.com"
             target="_blank"
             rel="noreferrer"
-            className="inline-block bg-coral text-white text-[14px] px-5 py-2.5"
+            className="btn-coral inline-flex shrink-0 px-6 py-2.5 text-[13px] font-bold uppercase tracking-[0.12em]"
           >
-            {t.linkedin}
+            {t.substackCta}
           </a>
         </div>
-        <div className="relative min-h-[520px] hidden lg:block">
-          <Image
-            src="/images/2024/03/congreso-futuro-charla-oscar.png"
-            alt=""
-            fill
-            className="object-cover object-left"
-            sizes="280px"
-          />
+      </section>
+
+      <section id="quien-soy" className="pt-16 pb-10">
+        <div className="site-container">
+          <h1 className="section-title text-ink">{t.who}</h1>
+        </div>
+        <div className="mt-8 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_min(34vw,460px)]">
+          <div className="site-container lg:mr-0 lg:max-w-none lg:pl-[max(1rem,calc((100vw-1140px)/2))] lg:pr-8 text-[18px] leading-[1.85] space-y-6">
+            <p>{t.p1}</p>
+            <p>{t.p2}</p>
+            <p>{t.p3}</p>
+            <a
+              href="https://linkedin.com/in/oscarcartagena"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-coral inline-block text-[14px] px-5 py-2.5"
+            >
+              {t.linkedin}
+            </a>
+          </div>
+          <div className="relative ml-auto h-[320px] w-[min(100%,280px)] lg:ml-0 lg:h-[640px] lg:w-full">
+            <Image
+              src="/images/2024/03/congreso-futuro-charla-oscar.png"
+              alt=""
+              fill
+              className="object-cover object-right"
+              sizes="(min-width: 1024px) 34vw, 280px"
+            />
+          </div>
         </div>
       </section>
 
@@ -301,6 +347,41 @@ export default function HomePage({ locale, posts }: { locale: Locale; posts: Pos
         {t.cards.map((card) => (
           <AffiliationCard key={card.image} {...card} more={t.more} />
         ))}
+      </section>
+
+      <section id="rageketing" className="bg-[#FF2800] py-20 text-black">
+        <div className="site-container grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+          <div>
+            <h2 className="font-black uppercase leading-[0.82] tracking-tight text-[56px] md:text-[84px]">
+              Rage
+              <span className="text-white">keting</span>
+            </h2>
+            <p className="mt-6 text-[22px] md:text-[26px] font-black uppercase tracking-tight max-w-xl">
+              {t.rageTagline}
+            </p>
+            <p className="mt-6 text-[20px] md:text-[22px] font-semibold leading-snug max-w-xl">
+              {t.rageLead}
+            </p>
+            <p className="mt-4 text-black/80 max-w-xl text-[17px] leading-relaxed">{t.rageBody}</p>
+            <a
+              href="https://rageketing.com"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-10 inline-flex bg-black text-white font-black uppercase tracking-[0.14em] text-[14px] px-8 py-4 hover:bg-white hover:text-black"
+            >
+              {t.rageCta}
+            </a>
+          </div>
+          <div className="relative aspect-[4/5] w-full overflow-hidden border-4 border-black">
+            <Image
+              src="/images/rageketing.jpg"
+              alt="Rageketing"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 40vw, 100vw"
+            />
+          </div>
+        </div>
       </section>
 
       <section
@@ -469,7 +550,7 @@ function AffiliationCard({
       <Image src={image} alt={title} width={220} height={220} className="object-contain max-h-[160px] w-auto h-auto" />
       <div className="affiliation-overlay absolute inset-0 bg-black/70 text-white opacity-0 transition-opacity p-4 flex flex-col justify-end">
         <p className="text-sm font-semibold leading-snug">{title}</p>
-        {href ? <span className="mt-2 text-coral text-sm">{more}</span> : null}
+        {href ? <span className="mt-2 text-white text-sm font-semibold">{more}</span> : null}
       </div>
     </div>
   );

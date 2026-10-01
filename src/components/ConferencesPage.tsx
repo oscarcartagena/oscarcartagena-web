@@ -1,3 +1,4 @@
+import Accordion from "@/components/Accordion";
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/content";
@@ -53,56 +54,52 @@ const copy = {
       {
         title: "Global Policy & Regulation on Artificial Intelligence",
         body: "An exploration of how governments and international bodies are shaping the future of AI through evolving laws, ethical standards, and regulatory frameworks to ensure responsible development and deployment.",
-        image: "/images/2024/09/1706479638266.jpeg",
-        href: "/contact-me/",
       },
       {
         title: "Neuro-rights: What are them and why are they important?",
         body: "A critical discussion on the emerging field of neuro-rights, addressing the ethical and legal challenges of protecting mental privacy, freedom of thought, and mental integrity as neurotechnology advances.",
-        image: "/images/2024/09/1708093171088.jpeg",
-        href: "/contact-me/",
       },
       {
         title: "Immersive technologies and digital transformation",
         body: "An insight into how immersive technologies like VR and AR are revolutionizing industries, driving digital transformation, and creating more interactive, efficient, and engaging user experiences.",
-        image: "/images/2024/09/1624333218150.jpeg",
-        href: "/contact-me/",
       },
       {
         title: "Emerging Technologies in Education",
         body: "A deep dive into the role of cutting-edge technologies such as AI, AR, and VR in transforming traditional education, enhancing learning environments, and empowering educators and students.",
-        image: "/images/2024/09/1713828410408.jpeg",
-        href: "/contact-me/",
       },
     ],
     quotes: [
       {
         quote:
-          "Oscar is one of those amazing people you meet in life; working with him has been a unique learning experience. Oscar is a highly qualified professional, but he is also one of the most humble and collaborative people I know. His motto is “let's solve this without stress,” and he always has a creative solution to problems.",
-        name: "Antonio Da Rocha",
-        org: "multiversica.com",
-        href: "https://multiversica.com/",
-      },
-      {
-        quote:
-          "A strategic, generous and deeply knowledgeable voice for immersive technologies in Latin America.",
+          "Oscar is a creative and bold person, demonstrating commitment and adaptability to share his knowledge and its practical applications with his audience. Along with his experience, we managed to organize the first AI summit for businesses at the municipal level, becoming the first municipality in the southern area of the Metropolitan Region to achieve this feat. Nothing is impossible with teamwork, and Oscar is a constant example of leadership and unification of goals to achieve the greatest impact in the community.",
         name: "Víctor Ramírez Pratt",
-        org: "web.sanmiguel.cl",
-        href: "https://web.sanmiguel.cl/",
+        org: "Coordinador Departamento Fomento Productivo, Municipalidad de San Miguel",
+        href: "https://web.sanmiguel.cl",
+        image: "/images/2024/09/1708093171088.jpeg",
       },
       {
         quote:
-          "Oscar brings clarity, energy and a truly international perspective to conversations about XR and emerging tech.",
+          "If you're looking for someone passionate, at the cutting edge of the latest trends in the industry from Latin America to the world, and always ready to share his cross-disciplinary, people-centred vision, with both experts and new comers, Oscar is the right person. Among the many conferences, keynotes, podcasts, showcases that he's been leading, collaborating with or giving advises for, one thing is sure: Oscar will get you inspired and motivated by his contagious energy.",
         name: "Sylvain Grain",
-        org: "www.stereopsia.com",
+        org: "Director / Producer, Stereopsia Latam",
         href: "https://www.stereopsia.com/",
+        image: "/images/2024/09/1624333218150.jpeg",
       },
       {
         quote:
-          "A trusted advisor and outstanding speaker who connects policy, industry and creative practice.",
+          "I met Oscar on Linkedin and it was truly a blessing! We have been researching Augmented Reality for a while now to implement into our app and with so many options out there. It was hard to know which direction was best suited to our company goals. After speaking with Oscar a number of times over the phone, he finally set us in the right direction with an affordable solution that maintained high-quality output. If you are thinking about implementing Augmented Reality into your business, you need to speak to Oscar.",
         name: "Cory F. Zufelt",
-        org: "",
-        href: "",
+        org: "CEO",
+        href: "https://www.linkedin.com/in/coryzufelt/",
+        image: "/images/2024/09/1713828410408.jpeg",
+      },
+      {
+        quote:
+          "Oscar is one of those amazing people you meet in life; working with him has been a unique learning experience. Oscar is a highly qualified professional, but he is also one of the most humble and collaborative people I know. His motto is “let's solve this without stress,” and he always has a creative solution to problems, resolving them without creating more issues, something I greatly admire.",
+        name: "Antonio Da Rocha",
+        org: "Chief of Immersive Learning, Multiversica",
+        href: "https://multiversica.com/",
+        image: "/images/2024/09/1706479638266.jpeg",
       },
     ],
   },
@@ -156,56 +153,52 @@ const copy = {
       {
         title: "Regulación global de la Inteligencia Artificial",
         body: "Un recorrido por el mundo regulatorio donde analizaremos las leyes, normas y políticas públicas sobre Inteligencia Artificial que se están implementando en los países y regiones más relevantes del planeta.",
-        image: "/images/2024/09/1706479638266.jpeg",
-        href: "/es/contacto/",
       },
       {
         title: "Neuro-derechos: ¿qué son y por qué son importantes?",
         body: "Una charla enfocada en el incipiente campo de los neuro-derechos, campo profesional encargado de afrontar los desafíos éticos y legales de la protección de la privacidad mental, libre pensamiento e integridad psicológica.",
-        image: "/images/2024/09/1708093171088.jpeg",
-        href: "/es/contacto/",
       },
       {
         title: "Tecnologías inmersivas y transformación digital",
         body: "Una charla sobre los fundamentos de la realidad aumentada, realidad virtual y la realidad mixta. Cómo éstas tecnologías están transformando la productividad, el entretenimiento y nuestra relación con la tecnología.",
-        image: "/images/2024/09/1624333218150.jpeg",
-        href: "/es/contacto/",
       },
       {
         title: "Tecnologías emergentes en la educación",
         body: "Descubre la ciencia detrás del futuro de la educación y cómo un cambio de paradigma educativo es inminente.",
-        image: "/images/2024/09/1713828410408.jpeg",
-        href: "/es/contacto/",
       },
     ],
     quotes: [
       {
         quote:
-          "Oscar es de esas personas extraordinarias que te encuentras en la vida; trabajar con él ha sido una experiencia de aprendizaje única.",
-        name: "Antonio Da Rocha",
-        org: "multiversica.com",
-        href: "https://multiversica.com/",
-      },
-      {
-        quote:
-          "Una voz estratégica, generosa y profundamente informada para las tecnologías inmersivas en Latinoamérica.",
+          "Oscar is a creative and bold person, demonstrating commitment and adaptability to share his knowledge and its practical applications with his audience. Along with his experience, we managed to organize the first AI summit for businesses at the municipal level, becoming the first municipality in the southern area of the Metropolitan Region to achieve this feat. Nothing is impossible with teamwork, and Oscar is a constant example of leadership and unification of goals to achieve the greatest impact in the community.",
         name: "Víctor Ramírez Pratt",
-        org: "web.sanmiguel.cl",
-        href: "https://web.sanmiguel.cl/",
+        org: "Coordinador Departamento Fomento Productivo, Municipalidad de San Miguel",
+        href: "https://web.sanmiguel.cl",
+        image: "/images/2024/09/1708093171088.jpeg",
       },
       {
         quote:
-          "Oscar aporta claridad, energía y una perspectiva verdaderamente internacional a las conversaciones sobre XR.",
+          "If you're looking for someone passionate, at the cutting edge of the latest trends in the industry from Latin America to the world, and always ready to share his cross-disciplinary, people-centred vision, with both experts and new comers, Oscar is the right person. Among the many conferences, keynotes, podcasts, showcases that he's been leading, collaborating with or giving advises for, one thing is sure: Oscar will get you inspired and motivated by his contagious energy.",
         name: "Sylvain Grain",
-        org: "www.stereopsia.com",
+        org: "Director / Producer, Stereopsia Latam",
         href: "https://www.stereopsia.com/",
+        image: "/images/2024/09/1624333218150.jpeg",
       },
       {
         quote:
-          "Un asesor de confianza y un conferencista excepcional, que conecta política, industria y práctica creativa.",
+          "I met Oscar on Linkedin and it was truly a blessing! We have been researching Augmented Reality for a while now to implement into our app and with so many options out there. It was hard to know which direction was best suited to our company goals. After speaking with Oscar a number of times over the phone, he finally set us in the right direction with an affordable solution that maintained high-quality output. If you are thinking about implementing Augmented Reality into your business, you need to speak to Oscar.",
         name: "Cory F. Zufelt",
-        org: "",
-        href: "",
+        org: "CEO",
+        href: "https://www.linkedin.com/in/coryzufelt/",
+        image: "/images/2024/09/1713828410408.jpeg",
+      },
+      {
+        quote:
+          "Oscar es de esas personas extraordinarias que te encuentras en la vida; trabajar con él ha sido una experiencia de aprendizaje única. Es un profesional altamente calificado, y también una de las personas más humildes y colaborativas que conozco. Su lema es “resolvamos esto sin estrés”, y siempre tiene una solución creativa a los problemas.",
+        name: "Antonio Da Rocha",
+        org: "Chief of Immersive Learning, Multiversica",
+        href: "https://multiversica.com/",
+        image: "/images/2024/09/1706479638266.jpeg",
       },
     ],
   },
@@ -289,17 +282,7 @@ export default function ConferencesPage({ locale }: { locale: Locale }) {
 
       <section className="site-container py-16">
         <h2 className="section-title mb-10 text-ink">{t.topics}</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {t.topicItems.map((topic) => (
-            <Link key={topic.title} href={topic.href} className="group block bg-white">
-              <Image src={topic.image} alt="" width={800} height={800} className="w-full h-56 object-cover" />
-              <div className="p-5">
-                <h3 className="text-ink font-bold text-[18px] group-hover:text-coral">{topic.title}</h3>
-                <p className="mt-2 text-[15px]">{topic.body}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <Accordion items={t.topicItems} />
         <p className="mt-10 text-center text-ink">{t.custom}</p>
       </section>
 
@@ -308,18 +291,27 @@ export default function ConferencesPage({ locale }: { locale: Locale }) {
           <h2 className="section-title text-white mb-10">{t.testimonials}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {t.quotes.map((q) => (
-              <blockquote key={q.name} className="bg-black/20 p-6">
-                <p className="italic text-white/85">“{q.quote}”</p>
-                <footer className="mt-4 text-coral font-semibold">
-                  {q.href ? (
-                    <a href={q.href} target="_blank" rel="noreferrer">
-                      {q.name}
-                    </a>
-                  ) : (
-                    q.name
-                  )}
-                  {q.org ? <span className="block text-white/50 font-normal text-sm">{q.org}</span> : null}
-                </footer>
+              <blockquote key={q.name} className="bg-black/20 p-6 flex gap-5 items-start">
+                <Image
+                  src={q.image}
+                  alt={q.name}
+                  width={88}
+                  height={88}
+                  className="w-[88px] h-[88px] object-cover rounded-full shrink-0"
+                />
+                <div>
+                  <p className="italic text-white/85">“{q.quote}”</p>
+                  <footer className="mt-4">
+                    {q.href ? (
+                      <a href={q.href} target="_blank" rel="noreferrer" className="text-yellow font-semibold">
+                        {q.name}
+                      </a>
+                    ) : (
+                      <span className="text-yellow font-semibold">{q.name}</span>
+                    )}
+                    {q.org ? <span className="block text-white/50 font-normal text-sm">{q.org}</span> : null}
+                  </footer>
+                </div>
               </blockquote>
             ))}
           </div>

@@ -6,7 +6,7 @@ const companies = [
   { href: "https://augmented-experiences.com/", label: "Augmented Experiences" },
   { href: "https://nvivo.cl/", label: "NVIVO" },
   { href: "https://posterity.cl/", label: "Posterity" },
-  { href: "https://achei.org/", label: "ACHEI" },
+  { href: "https://multiversica.com/", label: "Multiversica" },
 ];
 
 export default function Footer({ locale }: { locale: Locale }) {
@@ -27,6 +27,11 @@ export default function Footer({ locale }: { locale: Locale }) {
                 </a>
               </li>
             ))}
+            <li>
+              <a href="https://rageketing.com" target="_blank" rel="noreferrer" className="hover:text-white">
+                Rageketing – Buy the book!
+              </a>
+            </li>
           </ul>
         </div>
         <div>

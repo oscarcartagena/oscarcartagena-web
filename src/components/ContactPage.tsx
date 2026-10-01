@@ -82,7 +82,7 @@ export default function ContactPage({ locale }: { locale: Locale }) {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="bg-coral text-white font-semibold px-6 py-2.5"
+              className="btn-coral font-semibold px-6 py-2.5"
             >
               {status === "sending" ? "Enviando..." : "Enviar"}
             </button>

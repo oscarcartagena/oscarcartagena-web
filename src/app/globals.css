@@ -41,8 +41,16 @@ body {
   line-height: 1.7;
 }
 
-a {
-  color: inherit;
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.btn-coral {
+  background: var(--coral);
+  color: #fff !important;
 }
 
 img {
